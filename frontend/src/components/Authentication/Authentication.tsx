@@ -27,7 +27,7 @@ export default function Authentication() {
             return
         }
 
-        const responce = await $fetch('http://127.0.0.1:1111/registration', {
+        const responce = await $fetch('http://127.0.0.1:5000/registration', {
             method: 'POST',
             body: data,
         })
@@ -70,7 +70,7 @@ export default function Authentication() {
             return
         }
 
-        const responce = await $fetch('http://127.0.0.1:1111/authentication', {
+        const responce = await $fetch('http://127.0.0.1:5000/authentication', {
             method: 'GET',
             params: {
                 email: data.email,

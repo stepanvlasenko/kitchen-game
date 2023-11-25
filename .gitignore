@@ -26,3 +26,4 @@ dist-ssr
 # Python
 venv
 backend/__pycache__
+backend/dev.db

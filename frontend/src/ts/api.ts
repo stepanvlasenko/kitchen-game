@@ -1,7 +1,7 @@
 import { IDish, IGenerator, IPlayer, IProduct, IRecipe, IUser } from '@types'
 import { $fetch } from 'ofetch'
 
-const serverURL = 'http://127.0.0.1:1111'
+const serverURL = 'http://127.0.0.1:5000'
 
 export const userAPI = {
     getAll: async () => {

@@ -6,19 +6,16 @@ import './App.css'
 import { useSessionStore } from './store/sessionStore'
 import { useEffect, useState } from 'react'
 import { playerAPI } from './ts/api'
-import { useDataStore } from './store/dataStore'
 
 export default function App() {
     const userStore = useUserStore()
     const sessionStore = useSessionStore()
-    const dataStore = useDataStore()
     const [updateTrigger, setUpdateTrigger] = useState(false)
     
     useEffect(() => {
         const timer = setInterval(() => {
             setUpdateTrigger(v => !v)
         }, 30000)
-        console.log(dataStore.products)
         return () => {
             clearInterval(timer)
         }
